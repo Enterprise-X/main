@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>recTimeSet</class>
+ <widget class="QWidget" name="recTimeSet">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>250</width>
+    <height>380</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>250</width>
+    <height>320</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>250</width>
+    <height>400</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>40</y>
+     <width>150</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>上班签到开始时间：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>80</y>
+     <width>150</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>上班签到结束时间：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>160</y>
+     <width>150</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>下班签到开始时间：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>200</y>
+     <width>150</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>下班签到结束时间：</string>
+   </property>
+  </widget>
+  <widget class="QTimeEdit" name="amS">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>40</y>
+     <width>70</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="currentSection">
+    <enum>QDateTimeEdit::HourSection</enum>
+   </property>
+   <property name="displayFormat">
+    <string>HH:mm</string>
+   </property>
+   <property name="time">
+    <time>
+     <hour>7</hour>
+     <minute>0</minute>
+     <second>0</second>
+    </time>
+   </property>
+  </widget>
+  <widget class="QTimeEdit" name="amE">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>80</y>
+     <width>70</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="displayFormat">
+    <string>HH:mm</string>
+   </property>
+   <property name="time">
+    <time>
+     <hour>9</hour>
+     <minute>0</minute>
+     <second>0</second>
+    </time>
+   </property>
+  </widget>
+  <widget class="QTimeEdit" name="pmE">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>200</y>
+     <width>70</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="displayFormat">
+    <string>HH:mm</string>
+   </property>
+   <property name="time">
+    <time>
+     <hour>20</hour>
+     <minute>0</minute>
+     <second>0</second>
+    </time>
+   </property>
+  </widget>
+  <widget class="QTimeEdit" name="pmS">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>160</y>
+     <width>70</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="displayFormat">
+    <string>HH:mm</string>
+   </property>
+   <property name="time">
+    <time>
+     <hour>16</hour>
+     <minute>0</minute>
+     <second>0</second>
+    </time>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnOK">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>320</y>
+     <width>84</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+		color:rgb(0,0,0);
+		border: 2px solid #b0b0b0;
+background-color: rgb(255, 255, 255);
+		border-radius:15px;
+		min-width:80px
+}QPushButton:hover{ 
+color:rgb(255, 255, 255);
+background-color: rgb(200, 200, 200);
+border:2px solid  #b0b0b0;
+border-radius:15px;
+}
+QPushButton:pressed{
+color:rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);
+border:2px solid  #b0b0b0;
+border-radius:15px;
+}</string>
+   </property>
+   <property name="text">
+    <string>确定</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnBACK">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>320</y>
+     <width>84</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+		color:rgb(0,0,0);
+		border: 2px solid #b0b0b0;
+background-color: rgb(255, 255, 255);
+		border-radius:15px;
+		min-width:80px
+}QPushButton:hover{ 
+color:rgb(255, 255, 255);
+background-color: rgb(200, 200, 200);
+border:2px solid  #b0b0b0;
+border-radius:15px;
+}
+QPushButton:pressed{
+color:rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);
+border:2px solid  #b0b0b0;
+border-radius:15px;
+}</string>
+   </property>
+   <property name="text">
+    <string>返回</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>270</y>
+     <width>130</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>人脸识别正确次数：</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineFaceMax">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>270</y>
+     <width>30</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:rgb(0,0,0);
+border: 1px solid #000000;
+background-color: rgb(255, 255, 255);
+border-radius:2px;
+</string>
+   </property>
+   <property name="text">
+    <string>30</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
